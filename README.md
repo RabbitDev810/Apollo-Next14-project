@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 This is version 14.
+This project used page route.
 
 ```bash
 npm run dev
