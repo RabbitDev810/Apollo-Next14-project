@@ -1,0 +1,63 @@
+### user.js
+GET http://localhost:3000/api/user?wallet_address=0x28Dc1b43ebCd1A0A0B5AB1E25Fac0b82551207ef HTTP/1.1
+
+### getnumcalls.js
+GET http://localhost:3000/api/getnumcalls HTTP/1.1
+
+### marketer-info.js
+GET http://localhost:3000/api/marketer-info?channel_id=1001736901313 HTTP/1.1
+
+### market-search.js
+GET http://localhost:3000/api/marketer-search?marketerQuery=nebula HTTP/1.1
+
+### vote/index.js
+POST http://localhost:3000/api/vote HTTP/1.1
+content-type: application/json
+
+{
+    "address": "0xD8264b532a0A6c4a883eb4314c005c8CCad57F32",
+    "add": false,
+    "vote": 0
+}
+
+### user/index.js
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "wallet_address": "0x28Dc1b43ebCd1A0A0B5AB1E25Fac0b82551207eg"
+}
+
+###  users/updatesubscriptionstatus.js
+POST http://localhost:3000/api/users/updatesubscriptionstatus HTTP/1.1
+content-type: application/json
+
+{
+    "tier": 2,
+    "days": 7
+}
+
+### test for get in api/marketers/follow.js
+GET http://localhost:3000/api/marketers/follow?id=3&&channel_id=1001736901313 HTTP/1.1
+
+
+### test for post in api/marketers/follow.js
+POST http://localhost:3000/api/marketers/follow HTTP/1.1
+content-type: application/json
+
+{
+    "channel_id": 1001736901314
+}
+
+
+### test for detete in api/marketers/follow.js
+DELETE http://localhost:3000/api/marketers/follow HTTP/1.1
+content-type: application/json
+
+{
+    "id": 16,
+    "channel_id": 1001736901314
+}
+
+### test for get in api/marketers/index.js
+GET http://localhost:3000/api/marketers?searchQuery=nebula HTTP/1.1

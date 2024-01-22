@@ -1,0 +1,8 @@
+export { default as AboutUs } from './AboutUs'
+export { default as QuickStart } from './QuickStart'
+export { default as RoadMap } from './RoadMap'
+export { default as Features } from './Features'
+export { default as TokenCalls } from './TokenCalls'
+export { default as LatestTokenCalls } from './LatestTokenCalls'
+export { default as GetStarted } from './GetStarted'
+export { default as Footer } from './Footer'
